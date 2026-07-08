@@ -61,12 +61,13 @@ Requirements below, since most planets do use modded ore blocks.
 The `.nbt` structure templates in `datapack/data/korpanoff-planet-generator/structures/`
 are converted from `.schem` (Sponge Schematic) files using
 `tools/schem-to-structure.js`. Those `.schem` files are themselves produced
-by a separate tool — a headless JavaScript reimplementation of a procedural
-planet-generator datapack (rotating a virtual entity through yaw/pitch,
-stamping concentric spherical shells via caret-relative `fill` commands) —
-not included in this repo. `schem-to-structure.js` only needs a valid Sponge
-Schematic v2 `.schem` file as input, so it works with schematics from any
-source, not just that specific generator.
+by a separate, sibling project —
+[minecraft-planet-schematic-generator](https://github.com/eliestroun14/minecraft-planet-schematic-generator),
+a config-driven (JSON) generator that builds planet spheres natively (no
+Minecraft instance needed) and is meant to be easy for others to extend with
+new block presets or planet templates. `schem-to-structure.js` only needs a
+valid Sponge Schematic v2 `.schem` file as input though, so it works with
+schematics from any source, not just that generator.
 
 Note the folder is `structures/` (plural) — Minecraft renamed most datapack
 folders to singular in 1.21+ (`structures` → `structure`, `functions` →
