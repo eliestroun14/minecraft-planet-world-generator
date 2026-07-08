@@ -1,4 +1,4 @@
-# Korpanoff Planet Generator
+# Korpanoff's Planet Generator (eliestroun14)
 
 A Minecraft 1.20.1 world type — selectable from the "World Type" menu right
 next to "Superflat" — that generates an empty (void) world seeded with
