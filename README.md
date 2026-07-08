@@ -15,7 +15,26 @@ spawns far less often and doesn't collide with planet placement.
 
 It's built entirely as a **data pack**, using Minecraft's native jigsaw
 structure system — the same mechanism vanilla uses to place villages,
-mansions and ancient cities. No Forge/Fabric mod, no server plugin.
+mansions and ancient cities. The mechanism itself needs no mod — but see
+Requirements below, since most planets do use modded ore blocks.
+
+## Requirements
+
+- **Minecraft 1.20.1**, vanilla or Forge — the datapack mechanism itself
+  (jigsaw structures, functions, loot tables) is pure vanilla and needs no
+  mod loader to work at all.
+- **For full block fidelity, three Forge mods are required**: 25 of the 28
+  planets embed ore blocks from these mods directly in their structure NBT.
+  Loading the datapack without them means Minecraft can't resolve those
+  block registry names, leaving holes where those ores should be:
+  - [Applied Energistics 2](https://www.curseforge.com/minecraft/mc-mods/ae2) — `ae2:flawless_budding_quartz` (one decorative block)
+  - [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering) — deepslate aluminum/nickel/silver ore
+  - [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism) — osmium/tin ore (regular and deepslate) plus deepslate fluorite/lead/uranium ore
+  - The 3 vanilla-only planets — `habitable-random-1`, `rocky-dimension`,
+    `rocky-volcanic` — work with none of the above, so the datapack is still
+    usable (with reduced planet variety) on a mod-free vanilla server.
+- **Huge Structure Blocks** — required for the Iron Mammoth bonus structure
+  specifically (see the note further down); not needed for planets.
 
 ## How it works
 
