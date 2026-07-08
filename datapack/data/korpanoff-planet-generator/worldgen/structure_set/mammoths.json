@@ -1,0 +1,12 @@
+{
+  "structures": [
+    { "structure": "korpanoff-planet-generator:iron-mammoth", "weight": 1 }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 190400002,
+    "spacing": 64,
+    "separation": 32,
+    "spread_type": "linear"
+  }
+}

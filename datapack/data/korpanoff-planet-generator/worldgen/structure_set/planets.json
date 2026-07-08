@@ -1,0 +1,12 @@
+{
+  "structures": [
+    { "structure": "korpanoff-planet-generator:planet", "weight": 1 }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 190400001,
+    "spacing": 48,
+    "separation": 24,
+    "spread_type": "linear"
+  }
+}

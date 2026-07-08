@@ -1,0 +1,8 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# Built distributable — attached to GitHub Releases instead of being
+# committed; regenerate locally with tools/build-zip.ps1.
+korpanoff-planet-generator-datapack.zip

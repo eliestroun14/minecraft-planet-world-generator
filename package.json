@@ -1,0 +1,13 @@
+{
+  "name": "korpanoff-planet-generator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Minecraft 1.20.1 world type that scatters procedurally-generated planets across a void world via native jigsaw structures",
+  "license": "MIT",
+  "scripts": {
+    "convert": "node tools/schem-to-structure.js"
+  },
+  "dependencies": {
+    "prismarine-nbt": "^2.8.0"
+  }
+}
