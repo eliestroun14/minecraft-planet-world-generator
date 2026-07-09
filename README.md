@@ -143,15 +143,28 @@ a single habitable planet.
 ## Installing
 
 1. Download the latest `korpanoff-planet-generator-datapack.zip` from
-   [Releases](../../releases), or copy the `datapack/` folder yourself, into
-   your world's (or server's) `datapacks/` folder — or, when creating a
-   **new** world, click "More Options" → "Data Packs" on the Create World
+   [Releases](../../releases) — `pack.mcmeta` sits at the zip's root, so you
+   can drop the **.zip file itself, unextracted**, straight into your
+   world's (or server's) `datapacks/` folder; Minecraft loads zipped
+   datapacks natively. (Extracting it first and copying the resulting folder
+   in also works, if you prefer.) Or copy the `datapack/` folder from this
+   repo directly, same target folder.
+2. Either way, this goes into `<world save>/datapacks/` — or, when creating
+   a **new** world, click "More Options" → "Data Packs" on the Create World
    screen and add it there before generating.
-2. On the Create World screen, open the "World Type" selector — "Planets"
+3. On the Create World screen, open the "World Type" selector — "Planets"
    should now appear in the list.
 
+**If a pack you added doesn't show up**, it's essentially never a size
+problem (there's no meaningful hard datapack size cap) — it's almost always
+that `pack.mcmeta` isn't where Minecraft expects it: either you copied a zip
+whose root is a wrapper folder instead of `pack.mcmeta` itself, or you
+pointed at a folder that CONTAINS a `datapack` folder instead of the
+`datapack` folder's own contents.
+
 Building the zip yourself after making changes: `tools/build-zip.ps1`
-(PowerShell; re-zips `datapack/` from scratch).
+(PowerShell; re-zips `datapack/` from scratch, with `pack.mcmeta` at the zip
+root).
 
 ## Spawn & starting gear
 
