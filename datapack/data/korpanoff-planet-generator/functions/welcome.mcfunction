@@ -1,2 +1,2 @@
-tp @s 0 102 0
+tp @s 0 222 0
 tag @s add korpanoff_spawned

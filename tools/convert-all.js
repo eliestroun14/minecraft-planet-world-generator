@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { convert } = require('./schem-to-structure');
 
-const srcDir = 'C:\\Users\\elies\\Downloads\\sauvegardeDATAPACK\\schematic-gen\\output';
+const srcDir = 'C:\\Users\\elies\\Downloads\\sauvegardeDATAPACK\\minecraft-planet-schematic-generator\\outputs';
 const dstDir = path.join(__dirname, '..', 'datapack', 'data', 'korpanoff-planet-generator', 'structures');
 
 const files = fs.readdirSync(srcDir).filter((f) => f.endsWith('.schem'));
