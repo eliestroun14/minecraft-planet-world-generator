@@ -12,8 +12,7 @@
           "structure_overrides": [
             "korpanoff-planet-generator:rocky-planets",
             "korpanoff-planet-generator:habitable-planets",
-            "korpanoff-planet-generator:ring-planets",
-            "korpanoff-planet-generator:mammoths"
+            "korpanoff-planet-generator:ring-planets"
           ]
         }
       }
